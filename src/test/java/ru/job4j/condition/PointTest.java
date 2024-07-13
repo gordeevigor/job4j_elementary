@@ -5,7 +5,6 @@ import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.*;
 
 class PointTest {
-
     @Test
     void when00to20then2() {
         int x1 = 0;
