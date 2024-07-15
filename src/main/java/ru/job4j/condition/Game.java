@@ -10,12 +10,10 @@ public class Game {
         }
         if ("tetris".equals(name)) {
             System.out.println("Start - tetris");
-        } else {
-            System.out.println("Нужная игра не найдена");
         }
     }
 
     public static void main(String[] args) {
-        menu("Contra");
+        menu("tetris");
     }
 }
