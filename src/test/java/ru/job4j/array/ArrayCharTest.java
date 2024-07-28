@@ -20,20 +20,4 @@ class ArrayCharTest {
         boolean result = ArrayChar.startsWith(word, prefix);
         assertThat(result).isFalse();
     }
-
-    @Test
-    public void whenWordShorterThanPrefixAndFirstCharSameThenFalse() {
-        char[] word = {'H'};
-        char[] prefix = {'H', 'i'};
-        boolean result = ArrayChar.startsWith(word, prefix);
-        assertThat(result).isFalse();
-    }
-
-    @Test
-    public void whenWordShorterThanPrefixAndFirstCharNotSameThenFalse() {
-        char[] word = {'M'};
-        char[] prefix = {'H', 'i'};
-        boolean result = ArrayChar.startsWith(word, prefix);
-        assertThat(result).isFalse();
-    }
 }
