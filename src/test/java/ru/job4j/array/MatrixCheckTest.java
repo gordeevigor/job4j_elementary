@@ -44,7 +44,7 @@ class MatrixCheckTest {
     @Test
     public void when0RowHasMonoHorizontal() {
         char[][] input = {
-                {'X', 'X', 'X', 'X'},
+                {'X', 'X', 'X'},
                 {'X', ' ', 'X'},
                 {' ', ' ', 'X'},
         };
