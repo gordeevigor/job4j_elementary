@@ -1,6 +1,6 @@
 package ru.job4j.array;
 
-public class Examples {
+public class Defragmentation {
     public static int[] compress(int[] array) {
         for (int i = 0; i < array.length; i++) {
             if (array[i] == 0) {
