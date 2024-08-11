@@ -7,5 +7,6 @@ public class Main {
         Task34.evenAmount(1001);
         Task35.firstLastChange(135);
         Task36.firstLastChange(1001);
+        Task37.leftShift(132);
     }
 }
