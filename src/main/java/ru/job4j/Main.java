@@ -1,12 +1,10 @@
 package ru.job4j;
 
-import ru.job4j.practice.datatype.*;
+import ru.job4j.practice.conditions.*;
 
 public class Main {
     public static void main(String[] args) {
-        Task34.evenAmount(1001);
-        Task35.firstLastChange(135);
-        Task36.firstLastChange(1001);
-        Task37.leftShift(132);
+        System.out.println(GreatThen.check(2, 1));
+        System.out.println(LessThen.check(1, 2));
     }
 }
