@@ -4,6 +4,6 @@ import ru.job4j.practice.conditions.*;
 
 public class Main {
     public static void main(String[] args) {
-        ShortCircuitAnd.showA();
+        System.out.println(BonusCupCoffee.countCup(213, 6));
     }
 }
