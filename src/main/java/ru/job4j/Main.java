@@ -4,6 +4,6 @@ import ru.job4j.practice.conditions.*;
 
 public class Main {
     public static void main(String[] args) {
-        Task33.numSquare(3);
+        Task45.changeToRoundNum(42);
     }
 }
