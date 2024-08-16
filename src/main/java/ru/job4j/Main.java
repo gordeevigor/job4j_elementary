@@ -4,6 +4,6 @@ import ru.job4j.practice.conditions.*;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(Task49.check("", ""));
+        Task53.transform(-109);
     }
 }
