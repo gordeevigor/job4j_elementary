@@ -1,7 +1,5 @@
 package ru.job4j.practice.conditions;
 
-import java.util.Objects;
-
 public class Task49 {
     public static boolean check(String l, String r) {
         if (r.equals(l)) {

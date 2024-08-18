@@ -4,6 +4,6 @@ import ru.job4j.practice.conditions.*;
 
 public class Main {
     public static void main(String[] args) {
-        Task53.transform(-109);
+       Test59.getLinearEquation(4, 6);
     }
 }
