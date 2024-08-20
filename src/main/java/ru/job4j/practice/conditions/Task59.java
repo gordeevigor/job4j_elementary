@@ -1,6 +1,6 @@
 package ru.job4j.practice.conditions;
 
-public class Test59 {
+public class Task59 {
     public static void getLinearEquation(int a, int b) {
         if (a == 0 && b == 0) {
             System.out.println("Бесконечное множество");
