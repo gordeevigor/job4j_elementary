@@ -4,6 +4,7 @@ import ru.job4j.practice.loop.*;
 
 public class Main {
     public static void main(String[] args) {
-        Task51.loop(3, 3);
+        int[] array = {2, 3, -4};
+        Task54.loop(array);
     }
 }
