@@ -4,9 +4,9 @@ public class Task79 {
     public static void loop(int[] grades) {
         int bad = 0;
         int sum = 0;
-        for (int i = 0; i < grades.length; i++) {
-            sum += grades[i];
-            if (grades[i] <= 2) {
+        for (int grade : grades) {
+            sum += grade;
+            if (grade <= 2) {
                 bad++;
             }
         }
