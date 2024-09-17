@@ -4,7 +4,7 @@ import ru.job4j.practice.loop.*;
 
 public class Main {
     public static void main(String[] args) {
-        //System.out.println(Task144.remain(1071, 462));
-        Task145.loop(625, 1.3);
+        int[] nums = {6, 7, 8, 5, 6, 2};
+        Task147.loop(5, nums);
     }
 }
