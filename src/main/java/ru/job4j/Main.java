@@ -4,7 +4,8 @@ import ru.job4j.practice.loop.*;
 
 public class Main {
     public static void main(String[] args) {
-        int[] nums = {6, 7, 8, 5, 6, 2};
-        Task147.loop(5, nums);
+        int[] cNums = {2, 2, 1, 4, 2};
+        int[] aNums = {2, 2, 2, 1, 2};
+        Task148.loop(10, 10, cNums, aNums);
     }
 }
