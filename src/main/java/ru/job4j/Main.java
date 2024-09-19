@@ -4,6 +4,6 @@ import ru.job4j.practice.loop.*;
 
 public class Main {
     public static void main(String[] args) {
-        Task151.loop();
+        Task152.loop();
     }
 }
