@@ -14,7 +14,7 @@ public class Task125 {
             } else {
                 oddDigits.insert(0, digit + " ");
             }
-            num /= 10; // Убираем последнюю цифру
+            num /= 10;
         }
         if (evenDigits.length() > 0) {
             System.out.println(evenDigits.toString().trim());

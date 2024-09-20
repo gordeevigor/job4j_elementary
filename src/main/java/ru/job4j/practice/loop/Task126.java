@@ -13,7 +13,7 @@ public class Task126 {
                 oddCount.insert(0, digit + " ");
             }
             count++;
-            num /= 10; // Убираем последнюю цифру
+            num /= 10;
         }
         if (count % 2 == 0) {
             System.out.println(evenCount.toString().trim());
