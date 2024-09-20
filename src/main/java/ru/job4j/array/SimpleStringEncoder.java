@@ -21,6 +21,7 @@ public class SimpleStringEncoder {
         if (counter > 1) {
             result += counter;
         }
+
         return result;
     }
 }
