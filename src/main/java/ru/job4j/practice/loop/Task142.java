@@ -6,7 +6,6 @@ public class Task142 {
             System.out.println("Да");
             return;
         }
-
         int[] fibonachi = new int[Math.max(num, 5)];
         fibonachi[0] = 0;
         fibonachi[1] = 1;
