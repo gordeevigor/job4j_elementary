@@ -10,14 +10,14 @@ public class Task144 {
     }
 
     public static void loop(int num1, int num2) {
-        int minNumber = Math.min(num1, num2);
-        int maxNumber = Math.max(num1, num2);
-        int number = remain(minNumber, maxNumber);
+        int min = Math.min(num1, num2);
+        int max = Math.max(num1, num2);
+        int number = remain(min, max);
         while (number > 0) {
-            maxNumber = minNumber;
-            minNumber = number;
-            number = remain(minNumber, maxNumber);
+            max = min;
+            min = number;
+            number = remain(min, max);
         }
-        System.out.println(minNumber);
+        System.out.println(min);
     }
 }

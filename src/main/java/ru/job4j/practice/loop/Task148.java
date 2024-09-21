@@ -3,23 +3,23 @@ package ru.job4j.practice.loop;
 public class Task148 {
     public static void loop(int children, int adults, int[] cNum, int[] aNum) {
         int count = 0;
-        int adultTicketsRemain = adults;
-        int childrenTicketsRemain = children;
+        int adult = adults;
+        int child = children;
         for (int a = 0; a < aNum.length; a++) {
-                if (adultTicketsRemain >= 0
-                        && childrenTicketsRemain >= 0
-                        && childrenTicketsRemain >= cNum[a]
-                        && adultTicketsRemain >= aNum[a]) {
-                    childrenTicketsRemain -= cNum[a];
-                    adultTicketsRemain -= aNum[a];
+                if (adult >= 0
+                        && child >= 0
+                        && child >= cNum[a]
+                        && adult >= aNum[a]) {
+                    child -= cNum[a];
+                    adult -= aNum[a];
                     count++;
                 }
         }
         System.out.println("Группы: " + count + ", Взрослых: "
-                + (adults - adultTicketsRemain)
+                + (adults - adult)
                         + ", детей: "
-                + (children - childrenTicketsRemain)
+                + (children - child)
                 + ", осталось билетов взр: "
-                + adultTicketsRemain + ", осталось билетов дет: " + childrenTicketsRemain);
+                + adult + ", осталось билетов дет: " + child);
     }
 }
