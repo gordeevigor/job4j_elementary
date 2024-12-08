@@ -33,29 +33,28 @@ public class StartUI {
                 System.out.println("Enter name: ");
                 String name = scanner.nextLine();
                 Item item = new Item(name);
-                tracker.replace(id, item);
-                System.out.println("Заявка изменена успешно.");
+                System.out.println(tracker.replace(id, item) ? "Заявка изменена успешно." : "Ошибка замены заявки.");
             } else if (select != 6) {
-                    System.out.println("Пользователь выбрал: " + select);
-                } else {
-                    run = false;
-                }
+                System.out.println("Пользователь выбрал: " + select);
+            } else {
+                run = false;
             }
-        }
-
-        private void showMenu() {
-            String[] menu = {"Добавить новую заявку", "Показать все заявки", "Изменить заявку",
-                    "Удалить заявку", "Показать заявку по id", "Показать заявки по имени",
-                    "Завершить программу"};
-            System.out.println("Меню:");
-            for (int i = 0; i < menu.length; i++) {
-                System.out.println(i + ". " + menu[i]);
-            }
-        }
-
-        public static void main(String[]args) {
-            Scanner scanner = new Scanner(System.in);
-            Tracker tracker = new Tracker();
-            new StartUI().init(scanner, tracker);
         }
     }
+
+    private void showMenu() {
+        String[] menu = {"Добавить новую заявку", "Показать все заявки", "Изменить заявку",
+                "Удалить заявку", "Показать заявку по id", "Показать заявки по имени",
+                "Завершить программу"};
+        System.out.println("Меню:");
+        for (int i = 0; i < menu.length; i++) {
+            System.out.println(i + ". " + menu[i]);
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Tracker tracker = new Tracker();
+        new StartUI().init(scanner, tracker);
+    }
+}
