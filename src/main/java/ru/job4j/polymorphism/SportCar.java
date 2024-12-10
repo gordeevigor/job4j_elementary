@@ -9,6 +9,7 @@ public class SportCar implements Vehicle, Fuel {
     @Override
     public void brake() {
         System.out.println("Усиленная тормозная система");
+        System.out.println();
     }
 
     @Override
