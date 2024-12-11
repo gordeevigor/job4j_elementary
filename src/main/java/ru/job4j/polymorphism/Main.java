@@ -1,5 +1,7 @@
 package ru.job4j.polymorphism;
 
+import javax.sound.midi.VoiceStatus;
+
 public class Main {
     public static void main(String[] args) {
         Vehicle sportCar = new SportCar();
@@ -8,5 +10,7 @@ public class Main {
         sportCar.changeGear();
         sportCar.steer();
         sportCar.refill();
+        Vehicle.getDragCoefficient();
+        sportCar.chargeBattery();
     }
 }
