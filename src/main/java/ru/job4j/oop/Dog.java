@@ -1,7 +1,12 @@
 package ru.job4j.oop;
 
-public class Dog extends Pet {
+public class Dog implements Animal {
+    @Override
+    public void sound() {
+        System.out.println(getClass().getSimpleName() + " произносит звук: Гав-гав.");
+    }
+
     public void runAfterCat() {
-        System.out.println(nameClass + " не любит кошек, постоянно за ними гоняется.");
+        System.out.println(getClass().getSimpleName() + " не любит кошек, постоянно за ними гоняется.");
     }
 }
