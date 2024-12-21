@@ -32,4 +32,18 @@ public class StartUITest {
         new StartUI().init(input, tracker, actions);
         assertThat(tracker.findById(item.getId()).getName()).isEqualTo(replacedName);
     }
+
+    @Test
+    void whenDeleteAction() {
+        Tracker tracker = new Tracker();
+        Item item = tracker.add(new Item("Deleted item"));
+        String[] data = {"0", String.valueOf(item.getId()), "1"};
+        Input input = new MockInput(data);
+        UserAction[] actions = {
+                new DeleteAction(),
+                new ExitAction()
+        };
+        new StartUI().init(input, tracker, actions);
+        assertThat(tracker.findById(item.getId())).isNull();
+    }
 }
